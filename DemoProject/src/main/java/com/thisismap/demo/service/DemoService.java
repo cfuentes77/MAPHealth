@@ -116,7 +116,8 @@ public class DemoService {
 			conn = dataSource.getConnection();
 			PreparedStatement ps = conn.prepareStatement(
 					"UPDATE [User] SET FirstName = ?, LastName = ? WHERE id = ?");
-			
+
+			// set the preparedstatement parameters
 			ps.setString(1,firstName);
 			ps.setString(2,lastName);
 			ps.setInt(3,Integer.valueOf(id));
