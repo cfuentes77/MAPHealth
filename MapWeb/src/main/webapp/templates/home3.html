@@ -1,0 +1,29 @@
+<div>
+	<table width="650px" align="center">
+		<tr>
+			<td align="center">
+				<h1>USERS</h1>
+			</td>
+		</tr>
+		<tbody>
+			<tr>
+				<td>
+					<p>
+						User Id: <input type="text" ng-model="userId">&nbsp;&nbsp;
+						<button ng-click="loadUser(userId)">SEARCH</button>
+					</p>
+					<br/>
+					<p>
+						<b>First Name:</b> 
+						<input type="text" ng-model="response.returnObject.firstName" ng-blur="saveUser(userId)"> <br /><br /> 
+						<b>Last	Name:</b> 
+						<input type="text" ng-model="response.returnObject.lastName" ng-blur="saveUser(userId)">
+					</p>
+					<p>
+
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
