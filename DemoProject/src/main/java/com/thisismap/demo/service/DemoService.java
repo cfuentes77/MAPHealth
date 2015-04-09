@@ -36,7 +36,7 @@ public class DemoService {
 			boolean results = stmt.execute();
 		      int rsCount = 0;
 
-		      //Loop through the available result sets.
+		      //Loop through the available result sets
 		     while (results) {
 		           ResultSet rs = stmt.getResultSet();
 		           rsCount++;
